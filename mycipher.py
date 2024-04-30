@@ -20,7 +20,7 @@ for line in sys.stdin:
                 counter=0
                 new+=" "
             ascii_value = ord(char) + int(input_line)
-            if ascii_value > ord("Z"):
+            while  ascii_value > ord("Z"):
                 ascii_value-=26
             new+=chr(ascii_value)
             counter+=1
